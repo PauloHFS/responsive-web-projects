@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="normalize.css" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Survey Form</title>
+  </head>
+  <body>
+    <header>
+      <h1 id="title">Survey Form</h1>
+      <p id="description">This is a Survey form!</p>
+    </header>
+    <section>
+      <form id="survey-form" action="">
+        <div>
+          <label for="name" id="name-label">Name</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Enter your name"
+            required
+          />
+        </div>
+        <div>
+          <label for="email" id="email-label">Email</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Enter your Email"
+            required
+          />
+        </div>
+        <div>
+          <label for="number" id="number-label">Age</label>
+          <input
+            type="number"
+            name="number"
+            id="number"
+            min="13"
+            max="99"
+            placeholder="Age"
+          />
+        </div>
+        <div>
+          <label for="dropdown">Roles</label>
+          <select name="role" id="dropdown">
+            <option value="student">Student</option>
+            <option value="teacher">Teacher</option>
+          </select>
+        </div>
+        <div id="opt">
+          <input type="radio" name="opt" value="opt1" />
+          <label for="opt1">opt1</label>
+          <input type="radio" name="opt" value="opt2" />
+          <label for="opt2">opt2</label>
+          <input type="radio" name="opt" value="opt3" />
+          <label for="opt3">opt3</label>
+        </div>
+        <div>
+          <input type="checkbox" name="cbopt1" value="cbopt1" />
+          <label for="cbopt1">cbopt1</label>
+          <input type="checkbox" name="cbopt2" value="cbopt2" />
+          <label for="cbopt2">cbopt2</label>
+          <input type="checkbox" name="cbopt3" value="cbopt3" />
+          <label for="cbopt3">cbopt3</label>
+        </div>
+        <div>
+          <textarea
+            name="descricao"
+            id="descricao"
+            cols="30"
+            rows="10"
+          ></textarea>
+        </div>
+        <div>
+          <input type="submit" value="Enviar" id="submit" />
+        </div>
+      </form>
+    </section>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </body>
+</html>

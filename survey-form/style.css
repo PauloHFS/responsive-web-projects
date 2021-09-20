@@ -1,0 +1,18 @@
+body {
+  font-family: Georgia, "Times New Roman", Times, serif;
+
+  background: url("bg.jpg") no-repeat center center fixed;
+  background-size: cover;
+}
+
+header {
+  text-align: center;
+}
+
+#title {
+  color: #ddd;
+}
+
+#description {
+  color: #eee;
+}
