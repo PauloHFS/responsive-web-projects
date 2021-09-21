@@ -1,8 +1,15 @@
 body {
+  height: 100%;
+
   font-family: Georgia, "Times New Roman", Times, serif;
 
-  background: url("bg.jpg") no-repeat center center fixed;
-  background-size: cover;
+  background: rgb(131, 58, 180);
+  background: linear-gradient(
+    0deg,
+    rgba(131, 58, 180, 1) 24%,
+    rgba(253, 29, 29, 1) 73%,
+    rgba(252, 176, 69, 1) 98%
+  );
 }
 
 header {
@@ -15,4 +22,33 @@ header {
 
 #description {
   color: #eee;
+}
+
+#survey-form {
+  max-width: 300px;
+  margin: 0 auto;
+
+  border: 1px solid black;
+
+  padding: 15px;
+  border-radius: 10px;
+
+  background-color: rgba(131, 58, 180, 0.25);
+}
+
+label {
+  position: relative;
+}
+
+input:focus,
+textarea:focus {
+  border-color: rgba(252, 176, 69, 1);
+}
+
+fieldset {
+  border: 1px solid black;
+}
+
+#button-div {
+  margin: 0 auto;
 }

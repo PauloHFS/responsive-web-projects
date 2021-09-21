@@ -50,22 +50,58 @@
             <option value="teacher">Teacher</option>
           </select>
         </div>
-        <div id="opt">
-          <input type="radio" name="opt" value="opt1" />
-          <label for="opt1">opt1</label>
-          <input type="radio" name="opt" value="opt2" />
-          <label for="opt2">opt2</label>
-          <input type="radio" name="opt" value="opt3" />
-          <label for="opt3">opt3</label>
-        </div>
-        <div>
-          <input type="checkbox" name="cbopt1" value="cbopt1" />
-          <label for="cbopt1">cbopt1</label>
-          <input type="checkbox" name="cbopt2" value="cbopt2" />
-          <label for="cbopt2">cbopt2</label>
-          <input type="checkbox" name="cbopt3" value="cbopt3" />
-          <label for="cbopt3">cbopt3</label>
-        </div>
+        <fieldset id="opt">
+          <legend>Choose one</legend>
+          <ul>
+            <li>
+              <label for="opt1"
+                ><input type="radio" name="opt" value="opt1" />opt1</label
+              >
+            </li>
+            <li>
+              <label for="opt2"
+                ><input type="radio" name="opt" value="opt2" />opt2</label
+              >
+            </li>
+            <li>
+              <label for="opt3"
+                ><input type="radio" name="opt" value="opt3" />opt3</label
+              >
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset>
+          <legend>Select</legend>
+          <ul>
+            <li>
+              <label for="cbopt1"
+                ><input
+                  type="checkbox"
+                  name="cbopt1"
+                  value="cbopt1"
+                />cbopt1</label
+              >
+            </li>
+            <li>
+              <label for="cbopt2"
+                ><input
+                  type="checkbox"
+                  name="cbopt2"
+                  value="cbopt2"
+                />cbopt2</label
+              >
+            </li>
+            <li>
+              <label for="cbopt3"
+                ><input
+                  type="checkbox"
+                  name="cbopt3"
+                  value="cbopt3"
+                />cbopt3</label
+              >
+            </li>
+          </ul>
+        </fieldset>
         <div>
           <textarea
             name="descricao"
@@ -74,7 +110,7 @@
             rows="10"
           ></textarea>
         </div>
-        <div>
+        <div id="button-div">
           <input type="submit" value="Enviar" id="submit" />
         </div>
       </form>
