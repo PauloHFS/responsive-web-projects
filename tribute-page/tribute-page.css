@@ -1,0 +1,42 @@
+#main {
+    background: #DDD;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+
+#title {
+    font-size: 50px;
+    margin-bottom: -27px;
+}
+
+#subtitle {
+    margin-left: -30px;
+}
+
+#image {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 10px auto;
+}
+
+#tribute-info {
+    max-width: 750px;
+    margin: 100px auto;
+}
+
+#tribute-info p {
+    text-align: justify;
+}
+
+a {
+    color: #333;
+}
+
+a:hover {
+    color: #00F;
+}
+
+a:visited {
+    color: #777;
+}
