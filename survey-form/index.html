@@ -3,24 +3,24 @@
   <head>
     <link rel="stylesheet" href="normalize.css" />
     <link rel="stylesheet" href="style.css" />
-    <title>Survey Form</title>
+    <title>School Opinion Poll</title>
   </head>
   <body>
     <header>
-      <h1 id="title">Survey Form</h1>
+      <h1 id="title">School Opinion Poll</h1>
       <p id="description">This is a Survey form!</p>
     </header>
     <section>
       <form id="survey-form" action="">
         <div>
-          <label for="name" id="name-label">Name</label>
-          <input
-            type="text"
-            name="name"
-            id="name"
-            placeholder="Enter your name"
-            required
-          />
+          <label for="name" id="name-label"
+            >Name<br /><input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Enter your name"
+              required
+          /></label>
         </div>
         <div>
           <label for="email" id="email-label">Email</label>
@@ -44,60 +44,73 @@
           />
         </div>
         <div>
-          <label for="dropdown">Roles</label>
-          <select name="role" id="dropdown">
-            <option value="student">Student</option>
-            <option value="teacher">Teacher</option>
-          </select>
+          <label for="dropdown"
+            >Roles<select name="role" id="dropdown">
+              <option value="student">Student</option>
+              <option value="teacher">Teacher</option>
+            </select></label
+          >
         </div>
-        <fieldset id="opt">
-          <legend>Choose one</legend>
+        <fieldset id="program-poll">
+          <legend>Choose one program</legend>
           <ul>
             <li>
-              <label for="opt1"
-                ><input type="radio" name="opt" value="opt1" />opt1</label
+              <label for="school-lunch"
+                ><input
+                  type="radio"
+                  name="program-poll-item"
+                  value="school-lunch"
+                />School Lunch</label
               >
             </li>
             <li>
-              <label for="opt2"
-                ><input type="radio" name="opt" value="opt2" />opt2</label
+              <label for="transportation-assistance"
+                ><input
+                  type="radio"
+                  name="program-poll-item"
+                  value="transportation-assistance"
+                />Transportation Assistance</label
               >
             </li>
             <li>
-              <label for="opt3"
-                ><input type="radio" name="opt" value="opt3" />opt3</label
+              <label for="school-material-aid"
+                ><input
+                  type="radio"
+                  name="program-poll-item"
+                  value="school-material-aid"
+                />School Material Aid</label
               >
             </li>
           </ul>
         </fieldset>
         <fieldset>
-          <legend>Select</legend>
+          <legend>Select the new classes do you want!</legend>
           <ul>
             <li>
-              <label for="cbopt1"
+              <label for="brazilian-portuguese"
                 ><input
                   type="checkbox"
-                  name="cbopt1"
-                  value="cbopt1"
-                />cbopt1</label
+                  name="brazilian-portuguese"
+                  value="brazilian-portuguese"
+                />Brazilian Portuguese</label
               >
             </li>
             <li>
-              <label for="cbopt2"
+              <label for="french"
                 ><input
                   type="checkbox"
-                  name="cbopt2"
-                  value="cbopt2"
-                />cbopt2</label
+                  name="french"
+                  value="french"
+                />French</label
               >
             </li>
             <li>
-              <label for="cbopt3"
+              <label for="soccer"
                 ><input
                   type="checkbox"
-                  name="cbopt3"
-                  value="cbopt3"
-                />cbopt3</label
+                  name="soccer"
+                  value="soccer"
+                />Soccer</label
               >
             </li>
           </ul>
@@ -108,10 +121,11 @@
             id="descricao"
             cols="30"
             rows="10"
+            placeholder="Have you any suggestion?"
           ></textarea>
         </div>
         <div id="button-div">
-          <input type="submit" value="Enviar" id="submit" />
+          <input type="submit" value="Send" id="submit" />
         </div>
       </form>
     </section>

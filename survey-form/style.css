@@ -3,12 +3,11 @@ body {
 
   font-family: Georgia, "Times New Roman", Times, serif;
 
-  background: rgb(131, 58, 180);
+  background: rgb(34, 193, 195);
   background: linear-gradient(
     0deg,
-    rgba(131, 58, 180, 1) 24%,
-    rgba(253, 29, 29, 1) 73%,
-    rgba(252, 176, 69, 1) 98%
+    rgba(34, 193, 195, 1) 0%,
+    rgba(253, 187, 45, 1) 100%
   );
 }
 
@@ -17,15 +16,16 @@ header {
 }
 
 #title {
-  color: #ddd;
+  color: black;
+  font-weight: 100;
 }
 
 #description {
-  color: #eee;
+  color: black;
 }
 
 #survey-form {
-  max-width: 300px;
+  max-width: 75vw;
   margin: 0 auto;
 
   border: 1px solid black;
@@ -33,11 +33,28 @@ header {
   padding: 15px;
   border-radius: 10px;
 
-  background-color: rgba(131, 58, 180, 0.25);
+  background-color: rgba(34, 193, 195, 0.25);
+}
+
+div {
+  margin: 10px;
 }
 
 label {
   position: relative;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+select {
+  width: 100%;
+  margin-top: 5px;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  margin: 5px;
 }
 
 input:focus,
@@ -47,8 +64,22 @@ textarea:focus {
 
 fieldset {
   border: 1px solid black;
+  margin-bottom: 10px;
+}
+
+fieldset ul {
+  margin: 5px;
+  padding: 0;
+  list-style: none;
+}
+
+#descricao {
+  margin: 0;
+  margin-top: 10px;
+
+  width: 100%;
 }
 
 #button-div {
-  margin: 0 auto;
+  text-align: center;
 }
