@@ -4,18 +4,84 @@ html {
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
-#header {
-  display: flex;
-  justify-content: space-around;
+@media (max-width: 768px) {
+  #header {
+    height: 90px;
+  }
 
+  picture {
+    padding: 5 5 5 10;
+    text-align: center;
+  }
+
+  #nav-bar ul li a {
+    padding: 0 5;
+
+    height: 90px;
+    line-height: 90px;
+  }
+}
+
+@media (min-width: 768px) {
+  #header {
+    height: 80px;
+  }
+
+  picture {
+    height: 80px;
+    display: flex;
+    align-items: center;
+  }
+
+  picture img {
+    padding: 5;
+  }
+
+  picture legend {
+    padding: 15px;
+  }
+
+  #nav-bar ul li a {
+    padding: 0 20;
+
+    height: 80px;
+    line-height: 80px;
+  }
+}
+
+#header {
   position: fixed;
   top: 0;
-  width: 100%;
+
+  width: 100vw;
 
   border: 1px solid black;
 }
 
-#nav-bar a {
-  color: black;
+picture {
+  float: left;
+}
+
+#nav-bar {
+  float: right;
+}
+
+#nav-bar ul {
+  float: right;
+
+  margin: 0;
+  padding: 0;
+
+  list-style-type: none;
+}
+
+#nav-bar ul li {
+  display: inline;
+  float: left;
+}
+
+#nav-bar ul li a {
+  display: inline-block;
+  text-align: center;
   text-decoration: none;
 }
