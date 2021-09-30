@@ -5,6 +5,7 @@
   --beige2: #c4ae78;
   --black: #171515;
 }
+
 html {
   scroll-behavior: smooth;
 }
@@ -92,4 +93,10 @@ section {
 
 #localization article iframe {
   margin-bottom: 5vh;
+}
+
+@media (max-width: 850px) {
+  #localization article iframe {
+    width: 70vw;
+  }
 }
