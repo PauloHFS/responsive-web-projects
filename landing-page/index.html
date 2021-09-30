@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="normalize.css" />
+    <link rel="stylesheet" href="index.css" />
+    <title>Serve Bem Supermercado</title>
+  </head>
+  <body>
+    <header id="header">
+      <img src="./img/logo.png" alt="Logo" id="header-img" />
+      <nav id="nav-bar">
+        <ul>
+          <li><a href="#about" class="nav-link">Sobre</a></li>
+          <li><a href="#contact" class="nav-link">Contato</a></li>
+          <li><a href="#localization" class="nav-link">Como chegar?</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section id="home"></section>
+    <section id="about">
+      <header>
+        <h2>Somos o que você procura?</h2>
+      </header>
+      <article>
+        <ul>
+          <li>
+            <p>
+              Fundada ainda na infância de Ernane de Oliveria e Silva, no
+              presente é uma empresa familiar que atende toda a região de Porto
+              Franco - Maranhão.
+            </p>
+          </li>
+          <li>
+            <p>
+              Atendemos todas sua necessidades não importa qual. Trabalhamos com
+              secos e molhados, armarinho, etc.
+            </p>
+          </li>
+          <li>
+            <p>
+              Nossa missão é lhe servir bem, fazemos entregas a qualquer hora e
+              se precisar lhe buscamos e levamos em casa!
+            </p>
+          </li>
+        </ul>
+      </article>
+    </section>
+    <section id="contact">
+      <header>
+        <h2>Contato</h2>
+      </header>
+      <article>
+        <p>
+          Ficou interessado? Nos mande seu e-mail para que possamos lhe enviar
+          nossas melhores ofertas:
+        </p>
+        <form action="https://www.freecodecamp.com/email-submit" id="form">
+          <input type="email" id="email" name="email" placeholder="E-mail" />
+          <input type="submit" value="Send" id="submit" />
+        </form>
+      </article>
+      <footer>
+        <p>
+          <p>Outras formas de contato:</p>
+          <img src="/img/whatsapp.png" alt="WhatsApp: " /><a
+            href="tel:+5599984297519"
+            class="contact-link"
+          >
+            +55 (99) 98429 7519</a
+          >
+        </p>
+        <p>
+          <img
+            src="https://img.icons8.com/officexs/16/000000/email.png"
+            alt="E-mail: "
+          />
+          <a href="mailto:ernanesilva40@gmail.com" class="contact-link"
+            >ernanesilva40@gmail.com</a
+          >
+        </p>
+      </footer>
+    </section>
+    <section id="localization">
+      <header>
+        <h2>
+          Rua Marechal Hermes, 261, Centro, Porto Franco - Maranhão - Brasil
+        </h2>
+      </header>
+      <article>
+        <!-- Mapa -->
+        <h3>Localização</h3>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7930.763998141392!2d-47.40235515752188!3d-6.344550986284398!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x3fa139a5499fc8df!2sServe%20Bem%20Supermercado!5e0!3m2!1spt-BR!2sbr!4v1632834715245!5m2!1spt-BR!2sbr"
+          width="600"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+        ></iframe>
+
+        <!-- Video -->
+        <h3>Conheça nossa cidade</h3>
+        <iframe
+          id="video"
+          width="600"
+          height="450"
+          src="https://www.youtube.com/embed/vWbzBMLn6vk"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </article>
+    </section>
+    <footer></footer>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </body>
+</html>

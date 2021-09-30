@@ -1,0 +1,102 @@
+:root {
+  /* https://www.canva.com/colors/color-palettes/gingerbread-ice-cream/ */
+  --beige1: #6f5b3e;
+  --cream: #f9f6f0;
+  --beige2: #c4ae78;
+  --black: #171515;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: var(--cream);
+  color: var(--black);
+}
+
+/* This is in the top all the time. */
+#header {
+  width: 100vw;
+  height: 10vh;
+
+  position: fixed; /* Fix in the top of the page */
+  line-height: 10vh; /* center the text in the nav */
+
+  display: flex;
+  justify-content: space-between;
+
+  background-color: var(--beige2);
+}
+
+#header img {
+  margin: 0 1vw;
+}
+
+#nav-bar ul {
+  list-style: none;
+
+  margin: 0;
+  padding: 0;
+}
+
+#nav-bar ul li {
+  display: inline;
+  margin-right: 4vw;
+}
+
+.nav-link,
+.contact-link {
+  font-weight: 500;
+  text-decoration: none;
+  color: var(--black);
+}
+
+section {
+  padding: 10vh 15vw 0 15vw; /* compensa o espaço da nav-bar e adiciona  */
+}
+
+#home {
+  height: 90vh;
+  display: grid;
+  place-items: center;
+
+  background: url("/img/sp.jpg");
+  background-size: cover;
+}
+
+#home header h1 {
+  font-weight: 900;
+  font-size: 20vh;
+}
+
+#home header h2 {
+  font-weight: 300;
+  text-align: center;
+}
+
+#contact header,
+#contact article {
+  margin-bottom: 5vh;
+}
+
+#contact header {
+  display: flex;
+  justify-content: center;
+}
+
+#localization {
+  display: grid;
+  place-items: center;
+}
+
+#localization article iframe {
+  margin-bottom: 5vh;
+}
+
+@media (max-width: 850px) {
+  #localization article iframe {
+    width: 70vw;
+  }
+}
