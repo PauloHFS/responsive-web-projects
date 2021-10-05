@@ -6,6 +6,18 @@
   --black: #171515;
 }
 
+/* Mobile Layout */
+@media (max-width: 900px) {
+  #welcome-section img {
+    width: 50%;
+    margin-top: 10vh;
+  }
+
+  #welcome-section h1 {
+    font-size: 200%;
+  }
+}
+
 html {
   font-family: "Roboto", sans-serif;
 }
@@ -44,18 +56,18 @@ html {
 
   color: var(--cream);
 }
-
 /* Navbar end */
 
+/* Welcome Section */
 #welcome-section {
   height: 93vh;
   padding-top: 7vh;
 
-  background: rgb(196, 174, 120);
-  background: linear-gradient(
-    45deg,
-    rgba(196, 174, 120, 1) 25%,
-    rgba(111, 91, 62, 1) 75%
+  background: rgb(111, 91, 62);
+  background: radial-gradient(
+    circle,
+    rgba(196, 174, 120, 1) 0%,
+    rgba(111, 91, 62, 1) 100%
   );
 
   text-align: center;
@@ -84,15 +96,69 @@ html {
   margin: 0;
   font-size: 200%;
 }
+/* Welcome Section END */
 
-/* Mobile Layout */
-@media (max-width: 900px) {
-  #welcome-section img {
-    width: 50%;
-    margin-top: 10vh;
-  }
-
-  #welcome-section h1 {
-    font-size: 200%;
-  }
+/* Project Section */
+#projects {
+  padding-top: 7vh;
 }
+
+#projects article {
+  display: flex;
+  
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  justify-content: center;
+}
+
+.project-tile {
+  width: 25vw;
+  height: auto;
+
+  margin: 1vw;
+  border: 1px solid var(--beige1);
+
+  display: flex;
+  
+}
+
+.project-tile img {
+  width: 50%;
+  height: auto;
+}
+/* Project Section END*/
+
+/* Contact Section */
+#contact {
+  height: 93vh;
+  margin-top: 7vh;
+
+  display: grid;
+  place-content: center;
+  
+  background-color: var(--beige2);
+}
+
+#contact header h2 {
+  margin: 0;
+
+  font-size: 300%;
+  font-weight: 900;
+}
+
+#contact article ul {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.profile-link {
+  display: block;
+
+  color: var(--black);
+  text-decoration: none;
+
+}
+/* Contact Section END */
