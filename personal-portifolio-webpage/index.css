@@ -1,0 +1,193 @@
+:root {
+  /* https://www.canva.com/colors/color-palettes/gingerbread-ice-cream/ */
+  --beige1: #6f5b3e;
+  --cream: #f9f6f0;
+  --beige2: #c4ae78;
+  --black: #171515;
+}
+
+/* Mobile Layout */
+@media (max-width: 900px) {
+  #welcome-section img {
+    width: 50%;
+    margin-top: 10vh;
+  }
+
+  #welcome-section h1 {
+    font-size: 200%;
+  }
+}
+
+html {
+  font-family: "Roboto", sans-serif;
+}
+
+/* Navbar */
+#navbar {
+  width: 100vw;
+  position: fixed;
+  background-color: var(--black);
+}
+
+#navbar ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+
+  height: 7vh;
+  line-height: 7vh;
+}
+
+#navbar li {
+  float: right;
+
+  margin-right: 5vw;
+}
+
+.navlink {
+  height: 100%;
+
+  display: block; /* Faz o link ocupar todo o tamanho do <li> */
+
+  text-align: center;
+  text-decoration: none;
+
+  font-weight: 900;
+
+  color: var(--cream);
+}
+/* Navbar end */
+
+/* Welcome Section */
+#welcome-section {
+  height: 93vh;
+  padding-top: 7vh;
+
+  background: rgb(111, 91, 62);
+  background: radial-gradient(
+    circle,
+    rgba(196, 174, 120, 1) 0%,
+    rgba(111, 91, 62, 1) 100%
+  );
+
+  text-align: center;
+}
+
+#welcome-section img {
+  /* responsive image */
+  width: 25%;
+  height: auto;
+  /* responsive image end */
+
+  margin: 10vh 0 5vh 0;
+
+  border: 2px solid var(--cream);
+  border-radius: 50%;
+}
+
+#welcome-section h1 {
+  margin: 0;
+
+  font-size: 400%;
+  font-weight: 900;
+}
+
+#welcome-section p {
+  margin: 0;
+  font-size: 200%;
+}
+/* Welcome Section END */
+
+/* Project Section */
+#projects {
+  padding-top: 7vh;
+}
+
+#projects article {
+  display: flex;
+  
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  justify-content: center;
+}
+
+.project-tile {
+  width: 20vw;
+  height: fit-content;
+
+  margin: 1vw;
+  border: 1px solid var(--beige1);
+
+  text-decoration: none;
+  background: var(--black);
+  color: var(--cream);
+}
+
+.project-tile:hover {
+  border: 5px var(--beige1) solid;
+}
+
+.project-tile img {
+  width: 20vw;
+  height: auto;
+}
+
+.project-tile p {
+  margin: 0;
+  padding: 1vh 1vw;
+  width: 20vw;
+}
+
+#projects footer {
+  display: flex;
+  place-content: center;
+}
+
+#projects footer p {
+  background-color: var(--black);
+  padding: 1vw;
+}
+
+#projects footer p:hover {
+  border: 5px var(--beige1) solid;
+
+}
+
+#projects footer p a {
+  color: var(--cream);
+  text-decoration: none;
+}
+/* Project Section END*/
+
+/* Contact Section */
+#contact {
+  height: 93vh;
+  margin-top: 7vh;
+
+  display: grid;
+  place-content: center;
+  
+  background-color: var(--beige2);
+}
+
+#contact header h2 {
+  margin: 0;
+
+  font-size: 400%;
+  font-weight: 900;
+}
+
+#contact article {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.contact-link {
+  color: var(--black);
+  text-decoration: none;
+
+  padding: 1vh 1vw;
+}
+/* Contact Section END */
